@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+html {
+	scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  width: auto !important; 
+  overflow-x: hidden !important;
+  background-color: #E9EAEB;
+  font-family: 'SofiaPro' sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+} 
+
+.header {
+  background-color: #02063F;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20% 0 20%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-logo {
+  height: auto;
+  width: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
+  background-color: #E9EAEB;
   display: flex;
   flex-direction: column;
+}
+
+.page-container {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 80vh;
+  max-height: 800px;
+  width: 60vw;
+  max-width: 1200px;
+  background-color: #fff;
+  align-self: center;
+  border-radius: 10px;
+  padding: 10px
 }
 
-.App-link {
-  color: #61dafb;
+.card-container {
+  height: inherit;
+  padding: 10px;
+  overflow: auto; 
+  overflow-x: hidden !important;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 8px;
+  margin-bottom: 10px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-item:hover {
+  background-color: #E9EAEB;
 }
